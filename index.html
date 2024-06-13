@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form and Validation</title>
+    <link rel="icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <!--form-->
+        <form class="row g-3 needs-validation " novalidate >
+
+          <!--first name-->
+          <div class="col-md-6 ">
+            <label for="f_name" class="form-label">Enter First name</label>
+            <input type="text" class="form-control f_name bg-info" id="f_name" name="f_name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Enter First name.
+            </div>
+          </div>
+
+          <!--last name-->
+          <div class="col-md-6">
+            <label for="l_name" class="form-label">Enter Last name</label>
+            <input type="text" class="form-control l_name bg-info" id="l_name" name="l_name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Enter Last name.
+            </div>
+          </div>
+
+          <!--email-->
+          <div class="col-md-12">
+            <label for="email_address" class="form-label">Enter email</label>
+            <input type="email" class="form-control email_address" id="email_address" name="email_address" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Enter your mail.
+            </div>
+          </div>
+
+
+
+          <!--address-->
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+
+          <!--city-->
+          <div class="col-md-6">
+            <label for="c_name" class="form-label">City</label>
+            <input type="text" class="form-control" id="c_name" name="c_name" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+
+          <!--state-->
+          <div class="col-md-3">
+            <label for="state" class="form-label">State</label>
+            <select class="form-select" id="state" name="state" required>
+              <option selected disabled value="">Choose...</option>
+              <option>Dhaka</option>
+              <option>Dinajpur</option>
+              <option>Rajshahi</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+
+          <!--zip-->
+          <div class="col-md-3">
+            <label for="z_code" class="form-label">Zip</label>
+            <input type="text" class="form-control z_code" id="z_code" name="z_code" required>
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+
+          <!--toggle-->
+          <div class="form-check">
+            <input type="radio" class="form-check-input check_1" id="check_1" name="radio-stacked" required>
+            <label class="form-check-label" for="check_1">Toggle this radio</label>
+          </div>
+
+          
+          <div class="form-check mb-3">
+            <input type="radio" class="form-check-input check_2" id="check_2" name="radio-stacked" required>
+            <label class="form-check-label" for="check_2">Or toggle this other radio</label>
+            <div class="invalid-feedback">More example invalid feedback text</div>
+          </div>
+
+          <!--file-->
+          <div class="mb-3">
+            <input type="file" class="form-control" aria-label="file example" required>
+            <div class="invalid-feedback">Example invalid form file feedback</div>
+          </div>
+
+          <!--range-->
+          <div class="mb-3">
+            <label for="range1" class="form-label range1">Range your experience</label>
+            <input type="range" class="form-range " id="range1">
+          </div>
+
+          <!--text-->
+          <div class="mb-3">
+            <label for="t_area" class="form-label">Write your comment</label>
+            <textarea class="form-control t_area bg-warning" id="t_area" placeholder="Write down here..." name="t_area" required></textarea>
+            <div class="invalid-feedback">
+              Please enter a message in the textarea.
+            </div>
+          </div>
+
+          <!--checkbox-->
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+           <div class="col-1">
+            <button class="btn btn-danger" type="reset">Reset</button>
+          </div>
+
+        </form>
+    </div>
+    
+    <script src="jss/bootstrap.bundle.min.js"></script>
+    <script src="jss/script.js"></script>
+  </body>
+</html>
